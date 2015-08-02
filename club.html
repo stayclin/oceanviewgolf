@@ -8,21 +8,31 @@
     <link rel="stylesheet" type="text/css" href="style/main.css">
 
 <style>
+#main_content p{
+text-align:center;
+padding:20px;
+}
+
 #clubhouse_pic{
 padding-top:50px;
 margin:0px 50px;
 width: 90%;
 height: 500px;
 //border: 1px solid #333;
-background-image:url('images/clubhouse.jpg');
+background-image:url('images/clubhouse-const.png');
 background-size:100%;
 background-repeat: no-repeat;
 background-position:0 -150px;
 }
-
-#main_content p{
-text-align:center;
-padding:20px;
+#clubhousedesign_pic{
+margin:50px 50px;
+width: 90%;
+height: 500px;
+//border: 1px solid #333;
+background-image:url('images/clubhouse-design.jpg');
+background-size:100%;
+background-repeat: no-repeat;
+//background-position:0 -150px;
 }
 </style>
 
@@ -58,30 +68,82 @@ padding:20px;
 	<!-- CONTENT AREA-->
 	<div id="content_area">
 		<div id="main_content">
-			<p>Clubhouse under construction. Coming Soon!</p>
-			<div id="clubhouse_pic">
-				<!--<img id="photo" src="clubhouse.jpg" />-->
-			</div>
+			<p style="font-size:20px;">Clubhouse under construction. Coming Soon!</p>
+			<br>
+				<div id="clubhouse_pic">
+					<!--<img id="photo" src="images/clubhouse.jpg" />-->
+				</div>
+				<div id="clubhousedesign_pic">
+				</div>
+
 		</div>
 	</div>
 
 	<!-- FOOTER -->
-	<div id="footer">
-        <div id="footbar">
-			<a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;|</a>
-			<a href="about.html">ABOUT &nbsp;&nbsp;&nbsp;&nbsp;|</a>
-			<a href="news.html">NEWS &nbsp;&nbsp;&nbsp;&nbsp;|</a>
-			<a href="rates.html">RATES &nbsp;&nbsp;&nbsp;&nbsp;|</a>
-			<a href="golf.html">GOLF &nbsp;&nbsp;&nbsp;&nbsp;|</a>
-			<a href="club.html">CLUB &nbsp;&nbsp;&nbsp;&nbsp;|</a>
-			<a href="contact.html">CONTACT</a>
-		</div>
-		<div id="footer_info">
-			&copy;2014 by OceanView Golf Club. All Rights Reserved. <br>
-			<a href="http://www.google.com">OceanView Golf Club Website</a> by Eason Chiu and sLin Inc.| Terms of Use | Privacy Statement
-		</div>
-
+		<div id="footer">
+	
+	<div id="footer_content">
+		<table id="footer_table" >
+				<tbody>
+		<tr>
+			<td class="footbar_links">
+				<a href="index.html">
+				<span class="show">HOME</span>
+				<span class="hov">首頁</span>
+				</a>
+			</td>
+			<td class="footbar_links">
+				<a href="about.html">
+				<span class="show">ABOUT</span>
+				<span class="hov">球場簡介</span>
+				</a>
+			</td>
+			<td class="footbar_links">
+				<a href="news.html">
+				<span class="show">NEWS</span>
+				<span class="hov">最新消息</span>
+				</a>
+				</td>
+			<td class="footbar_links">
+				<a href="rates.html">
+				<span class="show">RATES</span>
+				<span class="hov">收費標準</span>
+				</a>
+				</td>
+			<td class="footbar_links">
+				<a href="golf.html">
+				<span class="show">GOLF</span>
+				<span class="hov">球道介紹</span>
+				</a>
+				</td>
+			<td class="footbar_links">
+				<a href="club.html">
+				<span class="show">CLUB</span>
+				<span class="hov">會館設備</span>
+				</a>
+			</td>
+			<td class="footbar_links">
+				<a href="contact.html">
+				<span class="show">CONTACT</span>
+				<span class="hov">聯絡我們</span>
+				</a>
+			</td>
+			<td class="fluid"></td>
+			<td class="social_links">
+				<a href="http://www.facebook.com"><img src="images/facebook_32.png" alt="Facebook" width="22" height="22"></a>
+				<a href="http://www.twitter.com"><img src="images/twitter_32.png" alt="Twitter" width="22" height="22"></a>
+			</td>
+			<td id="footer_links">
+				&copy;2014 by OceanView Golf Club. All Rights Reserved.<br>
+				<a href="http://www.oceanviewgolf.com.tw">OceanView Golf Club Website</a> by Eason Chiu and sLin Inc.<br>
+				Terms of Use | Privacy Statement
+			</td>			
+		</tr>
+		</tbody>
+		</table>
 	</div>
+
+	</div> <!-- END FOOTER -->
 
 
 </div> <!-- END CONTAINER -->

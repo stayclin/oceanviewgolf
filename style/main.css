@@ -5,7 +5,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size:cover;
 //background-size:100%;
-font-family: arial, sans-serif;
+font-family: Arial;
 margin: 0 auto;
 }
 
@@ -95,6 +95,7 @@ top: 20px;
 float: left;
 //border: 1px solid #c7c7c7;
 width: 80px;
+height: 80px;
 }
 #navbar ul li a{
 padding:0;
@@ -106,10 +107,16 @@ color: #E9FAD4;
 text-decoration: none;
 }
 #navbar ul li.active{
-background-color: #000;
+//background-color: #000;
+background-image:url('../images/flag.png');
+background-repeat: no-repeat;
+background-size:80px 60px;
 }
 #navbar ul li:hover{
-background-color: #000;
+//background-color: #000;
+background-image:url('../images/flag.png');
+background-size:80px 60px;
+background-repeat: no-repeat;
 }
 
 #main_content{
@@ -132,19 +139,53 @@ padding-bottom:75px;
 padding-bottom:100px; 
 }
 
-/*home image
-photo_gallery{
-height: 400px;
-width:1150px;
-//border: 1px solid #333;
-background-color: rgba(236,250,220,0.4);
-margin-left:auto;
-margin-right:auto;
-background-image:url('../images/golf.jpg');
-background-repeat: no-repeat;
-background-size:100%;
-background-position:0 -100px;
-}*/
+#footer_table{
+width: 1000px;
+//border: 1px solid #c7c7c7;
+margin:auto;
+padding-top: 2px;
+}
+
+.footbar_links{
+width: 50px;
+font-size: 12px;
+color: #000;
+text-align: center;
+}
+.footbar_links a:link{
+color: #000;
+text-decoration: none;
+} 
+.footbar_links a:visited{
+color: #000;
+}
+.social_links{
+width:60px;
+}
+.fluid{
+//background-color: #c7c7c7;
+//overflow:visible;
+min-width: 100px;
+}
+a span.show, a:hover span.hov {
+ display: inline;
+}
+a:hover span.show, a span.hov {
+ display: none;
+}
+#footer_links{
+color: #000;
+font-size: 10px;
+text-align: right;
+width: 270px;
+}
+#footer_links a:link{
+color: #000;
+text-decoration: none;
+}
+#footer_links a:visited{
+color: #000;
+}
 
 #footer{
 //padding: 20px;
@@ -157,51 +198,15 @@ border-top: 5px solid #000;
 position: absolute;
 bottom: 0;
 left: 0;
-margin-right:auto;
-margin-left:auto;
+//margin-right:auto;
+//margin-left:auto;
 //position:fixed;
 }
-#footer_info{
-float: right;
-width: 400px;
-height: 30px;
-//background: #666;
-//border: 1px solid #c7c7c7;
-position: relative;
-top: 7px;
-//right: 100px;
-color: #000;
-font-size: 10px;
-}
-#footer_info a:link{
-color: #000;
-}
-#footer_info a:visited{
-color: #000;
-}
 
-#footbar{
-height: 30px;
-width: 570px;
-//clear: both;
+#footer_content{
+margin:0 auto;
+width:1075px;
+height:50px;
 //border: 1px solid #000;
-padding: 10px;
-height:1px;
-position: relative;
-left: 110px;
-top: 15px;
-float: left;
-}
-
-#footbar a{
-//float: left;
-list-style-type: none;
-padding: 0 10px 0 10px;
-font-size: 12px;
-color: #000;
-text-decoration: none;
-font-size: 12px;
-position: relative;
-top:-10px;
-//border: 1px solid red;
+//background-color:#c7c7c7;
 }
