@@ -4,8 +4,41 @@
 <head>
 <meta charset="utf-8">
 <title>濱海高爾夫球場官方網站</title>
-    <link rel="shortcut icon" href="images/logoicon-favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/main.css">
+<link rel="shortcut icon" href="images/logoicon-favicon.ico">
+<link rel="stylesheet" type="text/css" href="style/main.css">
+
+<!--nivoslider-->
+<link rel="stylesheet" href="style/nivo-slider.css" type="text/css" />
+<link rel="stylesheet" href="style/themes/default/default.css" type="text/css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+<script src="style/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+<style>
+.theme-default .nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+	//width: 1100px; height: 500px;
+    //width: 556px;
+    //height: 183px !important;
+}
+img.slides {
+	size:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+#imageContainer > span {
+    display: block;
+    width: 1000px;
+    margin-left: -450px; /* -(width-container width)/2 */
+}
+p.main{
+line-height:200%;
+padding:75px;
+}
+</style>
 
 </head>
 
@@ -36,12 +69,50 @@
 		</div>
 	</div>
 
+    <!--nivo slider-->
+	<div class="slider-wrapper theme-default" style="position: relative; width: 1100px; height: 600px;
+	margin:auto">
+	<div id="slider" class="nivoSlider" style="cursor: move; width: 1100px; height: 500px; overflow: hidden; ">
+    <img class="slides" src="images/golf.jpg" alt="" data-transition="slideInLeft"/>
+    <!--<a href="http://dev7studios.com"><img src="logo.png" alt="" title="#htmlcaption" /></a>
+	    <img src="golf.jpg" alt="" title="This is an example of a caption" />-->
+    <img class="slides" src="images/reflection.jpg" alt="" style="width:100%"/>
+	<img class="slides" src="images/windmills.jpg" alt=""/>
+	<span><img class="slides" src="images/bird.jpg" alt="" /></span>
+
+	</div>
+	</div>
+	<!--<div id="htmlcaption" class="nivo-html-caption">
+		<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+	</div>-->
+	<!--end slider-->
+	
+	<script type="text/javascript">
+	$(window).load(function() {
+    $('#slider').nivoSlider({effect:'slideInLeft', animSpeed:600, pauseTime:3600, startSlide: 0});
+	});
+	</script>
+
 	<!-- CONTENT AREA-->
 	<div id="content_area">
+		<!--fixed picture
 		<div id="photo_gallery">
-			<!--<img id="photo" src="images/golf.jpg" style="width=600px; height=400px;"/>-->
-		</div>
+			<!--<img id="photo" src="images/golf.jpg" style="width=600px; height=400px;"/>
+		</div>-->
 		<div id="main_content">
+			<p class="main">
+			台灣最北端唯一三面環山、一面臨海，真正名實相符的濱海球場。<br>
+			本球場特禮聘日本職業高爾夫球員Sukihala樣 設計，依照原有地形精心規劃，依山傍水，曲折起伏，順勢自然而成，是個難易適中，能讓球友盡情揮灑，享受樂趣的好球場。<br>
+			夏日：蔚藍晴空，白雲悠悠，徐徐海風，迎面吹拂；碧綠芳草，群鷗翩翩，人鳥共逐，賞心悅目；置身其中，瀟灑揮桿，心曠神怡，塵囂盡拋。<br>
+			冬季：很少有海霧擾人，特有的東北季風，是體能球技的考驗，亦是自我挑戰的試煉。<br>
+			本球場標準桿１８洞已於３／２９／２０１４正式啟用，並提供桿弟與電動球車服務，歡迎舊雨新知蒞臨使用，同時本於初衷，今後將更竭盡心智，力求完善，為愛護我們的廣大球友提供更完美的服務！<br>
+			&nbsp;<br>
+			&nbsp;<br>
+			歡迎隨時聯絡我們:<br>
+			TEL: (02)25630679<br>
+			FAX: (02)27382976<br>
+			新北市石門區尖鹿里尖子路1 0 號 
+			</p>
 		</div>
 	</div>
 

@@ -2,6 +2,8 @@ body {
 //background-color: #cccccc;
 background-image:url('../images/background.jpg');
 background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:cover;
 //background-size:100%;
 font-family: arial, sans-serif;
 margin: 0 auto;
@@ -11,6 +13,8 @@ margin: 0 auto;
 width: 100%;
 margin: 0 auto;
 //background: #fff;
+	min-height:100%;
+	position:relative;
 }
 
 #header {
@@ -111,7 +115,7 @@ background-color: #000;
 #main_content{
 //width: 80%;
 width:1100px;
-height: 500px;
+//height: 500px;
 //border: 1px solid #333;
 color: #000;
 //padding: 20px;
@@ -122,10 +126,14 @@ margin-left:auto;
 margin-right:auto;
 margin-bottom:100px;
 padding-top:10px;
+padding-bottom:75px;
+}
+#content_area {
+padding-bottom:100px; 
 }
 
-/*home image*/
-#photo_gallery{
+/*home image
+photo_gallery{
 height: 400px;
 width:1150px;
 //border: 1px solid #333;
@@ -136,7 +144,7 @@ background-image:url('../images/golf.jpg');
 background-repeat: no-repeat;
 background-size:100%;
 background-position:0 -100px;
-}
+}*/
 
 #footer{
 //padding: 20px;
@@ -146,12 +154,12 @@ height: 50px;
 clear: both;
 background-color: rgba(236,250,220,0.5);
 border-top: 5px solid #000; 
-//position: fixed;
+position: absolute;
 bottom: 0;
 left: 0;
 margin-right:auto;
 margin-left:auto;
-position:fixed;
+//position:fixed;
 }
 #footer_info{
 float: right;
