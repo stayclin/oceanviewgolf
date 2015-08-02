@@ -14,14 +14,17 @@ margin: 0 auto;
 }
 
 #header {
-width: 85%;
-height: 100px;
+//width: 85%;
+height: 130px;
 margin: 20px auto 20px auto;
 border-bottom: 1px solid #c7c7c7;
 border-top: 5px solid #000;
 //background: #333;
 //background-color: #2E8B57;
 background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#0f4c11), color-stop(100%,#c7dbca));
+//margin-left:auto;
+//margin-right:auto;
+width:1200px;
 }
 
 #logo{
@@ -29,12 +32,20 @@ float: left;
 width: 100px;
 height: 100px;
 margin: 10px;
+position: relative;
+top: 20px;
 //background: #ccc;
 background-image:url('../images/logo.png');
 background-repeat: no-repeat;
 background-size:100%;
 }
-
+#logo span{
+position:absolute; 
+width:100%;
+height:100%;
+top:0;
+left: 0;
+}
 #top_name{
 width: 350px;
 height: 50px;
@@ -54,7 +65,7 @@ height: 50px;
 //background: #666;
 //border: 1px solid #c7c7c7;
 position: relative;
-top: -25px;
+top: -5x;
 right: 10px;
 //color: #c7c7c7;
 color: #E9FAD4;
@@ -64,53 +75,78 @@ font-size: 12px;
 #navbar{
 height: 20px;
 //clear: both;
+text-align:center;
+padding:0;
 }
 #navbar ul{
 margin: 0;
 padding: 0;
 list-style-type: none;
 position: relative;
-left: 20px;
-top: 10px;
+left: 35px;
+top: 20px;
 }
 #navbar ul li{
 float: left;
-padding: 10px;
+//border: 1px solid #c7c7c7;
+width: 80px;
 }
 #navbar ul li a{
+padding:0;
 //float: left;
-padding: 0 10px 0 10px;
+//padding: 0 10px 0 10px;
 font-size: 12px;
+//color: #c7c7c7;
 color: #E9FAD4;
 text-decoration: none;
 }
-#navbar ul li a:hover{
-text-decoration: none;
-background-color: #B2FF99;
+#navbar ul li.active{
+background-color: #000;
+}
+#navbar ul li:hover{
+background-color: #000;
 }
 
 #main_content{
-width: 80%;
+//width: 80%;
+width:1100px;
 height: 500px;
 //border: 1px solid #333;
 color: #000;
-padding: 20px;
-margin: 40px auto 40px auto;
+//padding: 20px;
+//margin: 40px auto 40px auto;
 background-color: rgba(236,250,220,0.4);
 //background-color: transparent;
+margin-left:auto;
+margin-right:auto;
+
 }
 
+#photo_gallery{
+height: 400px;
+width:1150px;
+border: 1px solid #333;
+background-color: rgba(236,250,220,0.4);
+margin-left:auto;
+margin-right:auto;
+background-image:url('golf.jpg');
+background-repeat: no-repeat;
+background-size:100%;
+background-position:0 -100px;
+}
 #footer{
 //padding: 20px;
-width: 100%;
+//width: 100%;
 height: 50px;
+width:1350px;
 clear: both;
 background-color: rgba(236,250,220,0.5);
 border-top: 5px solid #000; 
 position: fixed;
 bottom: 0;
+margin-right:auto;
+margin-left:auto;
 }
-
 #footer_info{
 float: right;
 width: 400px;
@@ -118,38 +154,28 @@ height: 30px;
 //background: #666;
 //border: 1px solid #c7c7c7;
 position: relative;
-top: -20px;
-//right: 10px;
+top: 7px;
+right: 100px;
 color: #000;
 font-size: 10px;
 }
 
 #footbar{
 height: 30px;
-width: 50%;
+width: 570px;
 //clear: both;
 //border: 1px solid #000;
-position: relative;
-left: 110px;
-}
-#footbar ul{
-margin: 0;
-padding: 0;
-list-style-type: none;
-position: relative;
-left: 20px;
-//top: -20px;
-}
-#footbar ul li{
-float: left;
 padding: 10px;
 height:1px;
-border-right: 1px solid #000;
 position: relative;
+left: 110px;
 top: 15px;
+float: left;
 }
-#footbar ul li a{
+
+#footbar a{
 //float: left;
+list-style-type: none;
 padding: 0 10px 0 10px;
 font-size: 12px;
 color: #000;
@@ -157,8 +183,5 @@ text-decoration: none;
 font-size: 12px;
 position: relative;
 top:-10px;
-}
-#footbar ul li a:hover{
-text-decoration: none;
-background-color: #B2FF99;
+//border: 1px solid red;
 }
